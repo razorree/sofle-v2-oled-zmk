@@ -15,16 +15,17 @@
 #define RAISE 2
 #define ADJUST 3
 
+&mt { flavor = "balanced"; };
+
+&caps_word { 
+    continue-list = <UNDERSCORE MINUS DELETE>;
+    override-list = <&kp MINUS   &kp UNDERSCORE>; 
+};
 
 
 / {
-    mt { flavor = "balanced"; };
 
-    caps_word { 
-        continue-list = <UNDERSCORE MINUS DELETE>;
-    override-list = <&kp MINUS   &kp UNDERSCORE>; 
-    };
-
+ 
 
 // Activate ADJUST layer by pressing raise and lower
 
