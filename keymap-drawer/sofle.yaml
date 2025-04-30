@@ -25,7 +25,7 @@ layers:
   - U
   - J
   - '-'
-  - LEFT SHIFT
+  - '&caps_word'
   - N
   - {t: R, h: LALT}
   - {t: T, h: LCTRL}
