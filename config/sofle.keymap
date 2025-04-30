@@ -17,6 +17,11 @@
 
 &mt { flavor = "balanced"; };
 
+caps_word {
+    override-list = <&kp MINUS   &kp UNDERSCORE>;
+};
+
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
