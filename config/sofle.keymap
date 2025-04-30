@@ -17,10 +17,7 @@
 
 &mt { flavor = "balanced"; };
 
-caps_word {
-    override-list = <&kp MINUS   &kp UNDERSCORE>;
-};
-
+caps_word { override-list = <&kp MINUS   &kp UNDERSCORE>; };
 
 / {
     // Activate ADJUST layer by pressing raise and lower
@@ -51,7 +48,7 @@ caps_word {
 &kp ESC     &kp N1  &kp N2      &kp N3        &kp N4        &kp N5                           &kp N6   &kp N7         &kp N8       &kp N9           &kp N0         &kp GRAVE
 &kp TAB     &kp B   &kp L       &kp D         &kp W         &kp Z                            &kp SQT  &kp F          &kp O        &kp U            &kp J          &kp MINUS
 &caps_word  &kp N   &mt LALT R  &mt LCTRL T   &mt LSHIFT S  &kp G                            &kp Y    &mt RSHIFT H   &mt RCTRL A  &mt RIGHT_ALT E  &kp I          &kp SLASH
-&kp LCTRL   &kp Q   &kp X       &kp M         &kp C         &kp V   &kp K_MUTE    &none      &kp N    &kp M          &kp COMMA    &kp DOT          &kp SEMICOLON  &kp EQUAL
+&kp LCTRL   &kp Q   &kp X       &kp M         &kp C         &kp V   &kp K_MUTE    &none      &kp K    &kp P          &kp COMMA    &kp DOT          &kp SEMICOLON  &kp EQUAL
                     &kp LCTRL   &kp LEFT_GUI  &kp LALT      &mo 2   &kp SPACE     &kp ENTER  &mo 1    &kp BACKSPACE  &kp DELETE   &kp RALT
             >;
 
