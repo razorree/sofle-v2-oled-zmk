@@ -35,7 +35,7 @@ layers:
   - {t: H, h: RSHIFT}
   - {t: A, h: RCTRL}
   - {t: E, h: RIGHT ALT}
-  - ;
+  - I
   - /
   - LCTRL
   - Q
