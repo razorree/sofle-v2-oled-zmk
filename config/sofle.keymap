@@ -17,10 +17,10 @@
 
 &mt { flavor = "balanced"; };
 
-&caps_word { 
-    continue-list = <UNDERSCORE MINUS DELETE>;
-    override-list = <&kp MINUS   &kp UNDERSCORE>; 
-};
+//&caps_word { 
+//    continue-list = <UNDERSCORE MINUS DELETE>;
+//    override-list = <&kp MINUS   &kp UNDERSCORE>; 
+//};
 
 
 / {
