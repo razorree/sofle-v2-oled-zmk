@@ -22,12 +22,8 @@
 //    override-list = <&kp MINUS   &kp UNDERSCORE>; 
 //};
 
-
 / {
-
- 
-
-// Activate ADJUST layer by pressing raise and lower
+    // Activate ADJUST layer by pressing raise and lower
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -35,6 +31,30 @@
         adjust_layer {
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        L_PRNTHS {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <15 14>;
+        };
+
+        R_PRNTHS {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <16 15>;
+        };
+
+        L_SQRBRCKT {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <27 26>;
+        };
+
+        R_SQRBRCKT {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <28 27>;
         };
     };
 
