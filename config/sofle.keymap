@@ -24,38 +24,42 @@
 };
 */
 
-
-
-
-//&caps_word { 
-//    continue-list = <UNDERSCORE MINUS DELETE>;
-//    override-list = <&kp MINUS   &kp UNDERSCORE>; 
-//};
-
-/ {
-
-    /* Left-hand HRMs. */
-    ZMK_HOLD_TAP(hml,
-        flavor = "balanced";
-        tapping-term-ms = <280>;
+behaviors {
+    hml: hold_tap {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <300>;
         quick-tap-ms = <175>;
         require-prior-idle-ms = <200>;
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_R>;
         hold-trigger-on-release;
-    )
-    
-    /* Right-hand HRMs. */
-    ZMK_HOLD_TAP(hmr,
-        flavor = "balanced";
-        tapping-term-ms = <280>;
+    };
+};
+
+behaviors {
+    hmr: hold_tap {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <300>;
         quick-tap-ms = <175>;
         require-prior-idle-ms = <200>;
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_L>;
         hold-trigger-on-release;
-    )
+    };
+};
 
+
+
+&caps_word { 
+    continue-list = <UNDERSCORE MINUS DELETE>;
+    override-list = <&kp MINUS   &kp UNDERSCORE>; 
+};
+
+/ {
 
 
 // Activate ADJUST layer by pressing raise and lower
@@ -128,7 +132,7 @@
             bindings = <
 &kp ESC     &kp N1  &kp N2      &kp N3        &kp N4        &kp N5                           &kp N6   &kp N7         &kp N8       &kp N9           &kp N0         &kp GRAVE
 &kp TAB     &kp B   &kp L       &kp D         &kp W         &kp Z                            &kp SQT  &kp F          &kp O        &kp U            &kp J          &kp MINUS
-&caps_word  &kp N   &mt LALT R  &mt LCTRL T   &mt LSHIFT S  &kp G                            &kp Y    &mt RSHIFT H   &mt RCTRL A  &mt RIGHT_ALT E  &kp I          &kp SLASH
+&caps_word  &kp N   &hml LALT R &hml LCTRL T  &hml LSHIFT S &kp G                            &kp Y    &hmr RSHIFT H  &hmr RCTRL A &hmr RIGHT_ALT E &kp I          &kp SLASH
 &kp LCTRL   &kp Q   &kp X       &kp M         &kp C         &kp V   &kp K_MUTE    &none      &kp K    &kp P          &kp COMMA    &kp DOT          &kp SEMICOLON  &kp EQUAL
                     &kp LCTRL   &kp LEFT_GUI  &kp LALT      &mo 2   &kp SPACE     &kp ENTER  &mo 1    &kp BACKSPACE  &kp DELETE   &kp RALT
             >;
