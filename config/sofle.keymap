@@ -24,33 +24,7 @@
 };
 */
 
-behaviors {
-    hml: hold_tap {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <300>;
-        quick-tap-ms = <175>;
-        require-prior-idle-ms = <200>;
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_R>;
-        hold-trigger-on-release;
-    };
-};
 
-behaviors {
-    hmr: hold_tap {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <300>;
-        quick-tap-ms = <175>;
-        require-prior-idle-ms = <200>;
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_L>;
-        hold-trigger-on-release;
-    };
-};
 
 
 
@@ -60,7 +34,34 @@ behaviors {
 };
 
 / {
-
+    
+    behaviors {
+        hml: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R>;
+            hold-trigger-on-release;
+        };
+    };
+    
+    behaviors {
+        hmr: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L>;
+            hold-trigger-on-release;
+        };
+    };
 
 // Activate ADJUST layer by pressing raise and lower
     conditional_layers {
