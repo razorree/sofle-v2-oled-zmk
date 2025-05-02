@@ -24,6 +24,16 @@
 };
 */
 
+
+
+
+//&caps_word { 
+//    continue-list = <UNDERSCORE MINUS DELETE>;
+//    override-list = <&kp MINUS   &kp UNDERSCORE>; 
+//};
+
+/ {
+
 /* Left-hand HRMs. */
 ZMK_HOLD_TAP(hml,
     flavor = "balanced";
@@ -47,14 +57,8 @@ ZMK_HOLD_TAP(hmr,
 )
 
 
-//&caps_word { 
-//    continue-list = <UNDERSCORE MINUS DELETE>;
-//    override-list = <&kp MINUS   &kp UNDERSCORE>; 
-//};
 
-/ {
-    // Activate ADJUST layer by pressing raise and lower
-
+// Activate ADJUST layer by pressing raise and lower
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
