@@ -34,27 +34,27 @@
 
 / {
 
-/* Left-hand HRMs. */
-ZMK_HOLD_TAP(hml,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <200>;
-    bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <KEYS_R>;
-    hold-trigger-on-release;
-)
-
-/* Right-hand HRMs. */
-ZMK_HOLD_TAP(hmr,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <200>;
-    bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <KEYS_L>;
-    hold-trigger-on-release;
-)
+    /* Left-hand HRMs. */
+    ZMK_HOLD_TAP(hml,
+        flavor = "balanced";
+        tapping-term-ms = <280>;
+        quick-tap-ms = <175>;
+        require-prior-idle-ms = <200>;
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_R>;
+        hold-trigger-on-release;
+    )
+    
+    /* Right-hand HRMs. */
+    ZMK_HOLD_TAP(hmr,
+        flavor = "balanced";
+        tapping-term-ms = <280>;
+        quick-tap-ms = <175>;
+        require-prior-idle-ms = <200>;
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_L>;
+        hold-trigger-on-release;
+    )
 
 
 
