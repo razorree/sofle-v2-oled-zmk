@@ -1,0 +1,4 @@
+
+&led_strip {
+    status = "disabled";
+};
