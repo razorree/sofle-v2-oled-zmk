@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  graphite:
+  gallium:
   - ESC
   - '1'
   - '2'
@@ -17,13 +17,13 @@ layers:
   - B
   - L
   - D
-  - W
-  - Z
-  - ''''
-  - F
+  - C
+  - V
+  - J
+  - Y
   - O
   - U
-  - J
+  - ''''
   - '-'
   - '&caps_word'
   - N
@@ -31,22 +31,22 @@ layers:
   - {t: T, h: LCTRL}
   - {t: S, h: LSHIFT}
   - G
-  - Y
+  - P
   - {t: H, h: RSHIFT}
   - {t: A, h: RCTRL}
   - {t: E, h: RIGHT ALT}
   - I
   - /
   - LCTRL
-  - Q
   - X
+  - Q
   - M
-  - C
-  - V
+  - W
+  - Z
   - MUTE
   - ''
   - K
-  - P
+  - F
   - ','
   - .
   - ;
@@ -57,7 +57,7 @@ layers:
   - raise
   - SPACE
   - ENTER
-  - lower
+  - '&td_layer4'
   - BACKSPACE
   - DELETE
   - RALT
@@ -118,7 +118,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -240,10 +240,71 @@ layers:
   - {type: held}
   - ''
   - ''
-  - {type: held}
   - ''
   - ''
   - ''
+  - ''
+  colemak-dh:
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '`'
+  - TAB
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - '-'
+  - '&caps_word'
+  - A
+  - {t: R, h: LALT}
+  - {t: S, h: LCTRL}
+  - {t: T, h: LSHIFT}
+  - G
+  - M
+  - {t: N, h: RSHIFT}
+  - {t: E, h: RCTRL}
+  - {t: I, h: RIGHT ALT}
+  - O
+  - /
+  - LCTRL
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - MUTE
+  - ''
+  - K
+  - H
+  - ','
+  - .
+  - ;
+  - '='
+  - LCTRL
+  - LEFT GUI
+  - LALT
+  - raise
+  - SPACE
+  - ENTER
+  - '&td_layer0'
+  - BACKSPACE
+  - DELETE
+  - RALT
 combos:
 - p: [15, 14]
   k: (
