@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  graphite:
+  gallium:
   - ESC
   - '1'
   - '2'
@@ -17,13 +17,13 @@ layers:
   - B
   - L
   - D
-  - W
-  - Z
-  - ''''
-  - F
+  - C
+  - V
+  - J
+  - Y
   - O
   - U
-  - J
+  - ''''
   - '-'
   - '&caps_word'
   - N
@@ -31,22 +31,22 @@ layers:
   - {t: T, h: LCTRL}
   - {t: S, h: LSHIFT}
   - G
-  - Y
+  - P
   - {t: H, h: RSHIFT}
   - {t: A, h: RCTRL}
   - {t: E, h: RIGHT ALT}
   - I
   - /
   - LCTRL
-  - Q
   - X
+  - Q
   - M
-  - C
-  - V
+  - W
+  - Z
   - MUTE
   - ''
   - K
-  - P
+  - F
   - ','
   - .
   - ;
@@ -54,7 +54,7 @@ layers:
   - LCTRL
   - LEFT GUI
   - LALT
-  - raise
+  - '&td_layer2'
   - SPACE
   - ENTER
   - lower
@@ -176,7 +176,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: gallium, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -237,7 +237,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - {type: held}
